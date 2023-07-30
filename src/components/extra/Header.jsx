@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
       <header className="">
-        <nav className=" h-[10vh] bg-[#34393f] grid md:xl:2xl:flex items-center justify-around">
+        <nav className=" h-[10vh] bg-[#34393f] grid md:flex xl:2xl:flex items-center justify-around">
           <Link to="/home">
             <p className="text-6xl font-semibold">MoviewDb</p>
           </Link>
