@@ -19,8 +19,8 @@ function TRated() {
   return (
     <>
       <Header />
-      <div className="card">
-        <div className="card-card">
+      <div className="mt-10 ">
+        <div className="grid grid-cols-1 place-content-center p-5 xl:grid-cols-3 md:grid-cols-2 2xl:grid-cols-4">
           {" "}
           {trated &&
             trated.map((items) => (

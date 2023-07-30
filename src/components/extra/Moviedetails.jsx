@@ -18,20 +18,28 @@ const Moviedetails = ({
   return (
     <>
       <div key={id}>
-        <div className="movie">
+        <div className=" md:xl:2xl:p-8 text-white">
           <div
             style={{
               backgroundImage: `url("${Background}")`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "100%",
+              backgroundColor: "#0000009b",
+              backgroundBlendMode: "darken",
             }}
-            className="movie-details"
+            className="h-[100%]   rounded-3xl"
           >
-            <div className="movie-details-left">
-              <div className="movie-details-left-data">
+            <div className="p-8">
+              <div className="md:xl:2xl:flex gap-5">
                 <div>
-                  <img src={`https://image.tmdb.org/t/p/w500${poster_path}`} />
+                  <img
+                    src={`https://image.tmdb.org/t/p/w500${poster_path}`}
+                    className="h-[100%] md:xl:2xl:h-[250px]"
+                  />
                 </div>
                 <div>
-                  <h2 className="movie-details-left-data-title">{title}</h2>
+                  <h2 className="text-6xl">{title}</h2>
                   <p>Rating: {vote_average}</p>
                   <div className="">
                     <button role="" disabled>
@@ -42,9 +50,11 @@ const Moviedetails = ({
                   <p>Release Date: {release_date}</p>
                 </div>
               </div>
-              <div>
-                <h3>Overview</h3>
-                <p>{overview}</p>
+              <div className="mt-10 w-full   ">
+                <h3 className="text-2xl  md:xl:2xl:text-4xl mb-2">Overview</h3>
+                <p className="text-2xl  md:xl:2xl:text-2xl font-semibold">
+                  {overview}
+                </p>
               </div>
             </div>
           </div>

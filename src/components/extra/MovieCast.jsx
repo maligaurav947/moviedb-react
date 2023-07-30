@@ -15,9 +15,12 @@ function MovieCast({ id }) {
   });
   return (
     <div className="movie-cast">
-      <h1>Cast:</h1>
+      <h1 className="text-8xl pl-6 text-white">Cast:</h1>
       <br />
-      <div key={id} className="movie-cast-profile">
+      <div
+        key={id}
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-7 p-6 gap-5 text-white"
+      >
         {hero &&
           hero.slice(0, 7).map((hero) => (
             <>

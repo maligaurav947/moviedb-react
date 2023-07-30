@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <header className="header">
-        <nav className="header-nav">
+      <header className="">
+        <nav className=" h-[10vh] bg-[#34393f] grid md:xl:2xl:flex items-center justify-around">
           <Link to="/home">
-            <p className="header-nav-logo">MoviewDb</p>
+            <p className="text-6xl font-semibold">MoviewDb</p>
           </Link>
-          <ul className="header-nav-navlink">
+          <ul className="flex gap-[15px] text-4xl text-[#707578]">
             <Link to="/home">
               <li>Popular</li>
             </Link>
