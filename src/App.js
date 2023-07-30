@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home.jsx";
+import TRated from "./components/TRated";
+import Upcoming from "./components/Upcoming";
+import Header from "./components/extra/Header";
+import View from "./components/extra/View.jsx";
+import "./main.css";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HashRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/trated" element={<TRated />} />
+          <Route path="/view/:id" element={<View />} />
+          <Route path="/Upcoming" element={<Upcoming />} />
+          <Route path="/Toprated" element={<TRated />} />
+        </Routes>
+      </HashRouter>
+    </>
   );
 }
 
