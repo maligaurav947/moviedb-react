@@ -26,8 +26,13 @@ function MovieCast({ id }) {
             <>
               <div key={id}>
                 <img
-                  src={`https://image.tmdb.org/t/p/w500${hero.profile_path}`}
+                  src={
+                    !hero.profile_path
+                      ? "https://png.pngtree.com/png-vector/20200425/ourmid/pngtree-single-person-character-in-vector-png-image_2194492.jpg"
+                      : `https://image.tmdb.org/t/p/w500${hero.profile_path}`
+                  }
                   alt={hero.name}
+                  className="h-[300px] w-[300px]"
                 />
                 <h2>{hero.name}</h2>
                 <p>Character Play: {hero.character}</p>

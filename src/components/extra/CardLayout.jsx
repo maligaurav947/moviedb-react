@@ -9,12 +9,12 @@ const Cardlayout = ({ id, title, poster_path, vote_average }) => {
         <div className="grid place-content-center">
           <img
             src={`https://image.tmdb.org/t/p/w400${poster_path}`}
-            className="w-[250px]"
+            className="w-[250px] rounded-xl"
             alt={`${title}`}
           />
-          <div className="text-white text-center mt-5">
-            <p className="">{title}</p>
-            <p>Rating: {vote_average}</p>
+          <div className="grid gap-5 text-white text-center mt-5">
+            <p className="text-3xl">{title}</p>
+            <p className="text-xl font-bold">Rating: {vote_average}</p>
           </div>
         </div>
       </div>
