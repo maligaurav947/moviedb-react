@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Cardlayout from "./extra/CardLayout";
-import Header from "./extra/Header";
+import MovieCard from "../Pages/MovieCard";
+import Header from "../utils/Header";
 
 function Upcoming() {
   var Api_key = "c45a857c193f6302f2b5061c3b85e743";
@@ -25,7 +25,7 @@ function Upcoming() {
           {up &&
             up.map((items) => (
               <>
-                <Cardlayout key={items.id} {...items} />
+                <MovieCard key={items.id} {...items} />
               </>
             ))}
         </div>

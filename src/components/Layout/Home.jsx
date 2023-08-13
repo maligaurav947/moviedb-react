@@ -2,8 +2,8 @@ import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import Header from "./extra/Header";
-import Cardlayout from "./extra/CardLayout";
+import Header from "../utils/Header";
+import MovieCard from "../Pages/MovieCard";
 
 function Home() {
   const [items, setItems] = useState();
@@ -28,7 +28,7 @@ function Home() {
             items.map((items) => (
               <>
                 <>
-                  <Cardlayout key={items.id} {...items} />
+                  <MovieCard key={items.id} {...items} />
                 </>
               </>
             ))}

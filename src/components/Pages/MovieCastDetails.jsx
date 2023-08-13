@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
 
-function MovieCast({ id }) {
+function MovieCastDetails({ id }) {
   const [hero, setHero] = useState();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function MovieCast({ id }) {
       .catch((error) => error);
   });
   return (
-    <div className="movie-cast">
+    <div className="movie-cast mt-5">
       <h1 className="text-8xl pl-6 text-white">Cast:</h1>
       <br />
       <div
@@ -32,10 +32,30 @@ function MovieCast({ id }) {
                       : `https://image.tmdb.org/t/p/w500${hero.profile_path}`
                   }
                   alt={hero.name}
-                  className="h-[300px] w-[300px]"
+                  className="h-[300px] w-[300px] rounded-xl"
                 />
-                <h2>{hero.name}</h2>
+                <h2>Real Name: {hero.name}</h2>
                 <p>Character Play: {hero.character}</p>
+              </div>
+            </>
+          ))}
+        {hero &&
+          hero.slice(8, 20).map((hero) => (
+            <>
+              <div key={id} className="flex flex-col gap-1">
+                <img
+                  src={
+                    !hero.profile_path
+                      ? "https://png.pngtree.com/png-vector/20200425/ourmid/pngtree-single-person-character-in-vector-png-image_2194492.jpg"
+                      : `https://image.tmdb.org/t/p/w500${hero.profile_path}`
+                  }
+                  alt={hero.name}
+                  className="h-[300px] w-[300px] rounded-xl"
+                />
+                <div>
+                  <h2>Real Name: {hero.name}</h2>
+                  <p>Character Play: {hero.character}</p>
+                </div>
               </div>
             </>
           ))}
@@ -43,4 +63,4 @@ function MovieCast({ id }) {
     </div>
   );
 }
-export default MovieCast;
+export default MovieCastDetails;

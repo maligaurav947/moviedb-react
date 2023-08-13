@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router";
-import Moviedetails from "./Moviedetails";
-import Header from "./Header";
+import MovieView from "../Pages/MovieView";
+import Header from "../utils/Header";
 
 function View() {
   const [movie, setMovie] = useState();
@@ -18,11 +18,11 @@ function View() {
       })
       .catch((error) => error);
   }, [movie]);
-
+  console.log(movie);
   return (
     <>
       <Header />
-      <Moviedetails {...movie} />
+      <MovieView {...movie} />
     </>
   );
 }

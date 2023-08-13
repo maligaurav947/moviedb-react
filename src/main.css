@@ -3,9 +3,11 @@
  padding: 0;
  box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 a {
  color: currentColor;
  text-decoration: none;
@@ -17,11 +19,29 @@ html {
 
 body {
  font-size: 1.6rem;
- background-color: #272c33;
+ background-color: #001524;
+  font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+/*  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.18), rgb(0, 0, 0)); */
 li {
  text-decoration: none !important;
  list-style-type: none !important;
 }
+.card {
+ box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+ transition: box-shadow 0.356s ease-in-out;
+}
 
+.card:hover {
+ box-shadow: none;
+}
+
+.text-title {
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 1;
+ /* number of lines to show */
+ line-clamp: 1;
+ -webkit-box-orient: vertical;
+}
