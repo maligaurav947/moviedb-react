@@ -24,10 +24,10 @@ const MovieView = ({
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              backgroundColor: "#111",
+              backgroundColor: "#4947473f",
               backgroundBlendMode: "darken",
             }}
-            className="h-[100%] "
+            className="h-[100%]"
           ></div>
         </div>
         <div
