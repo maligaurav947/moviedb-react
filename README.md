@@ -24,8 +24,11 @@ As avid movie enthusiasts, we wanted to create a tool that makes discovering mov
 5. Open your browser and navigate to `http://localhost:3000` to start exploring movies!
 
 ### Screenshots
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
+## Home
+![Screenshot 1](https://raw.githubusercontent.com/maligaurav947/moviedb-react/Main/src/components/assets/img/main-home.png)
+
+## Movie Details Components
+![Screenshot 2](https://raw.githubusercontent.com/maligaurav947/moviedb-react/Main/src/components/assets/img/movie-deatils.png)
 
 ### Contribution
 Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request. Let's make this app even more awesome together.
@@ -34,6 +37,6 @@ Contributions are welcome! If you find any issues or want to add new features, f
 This project is licensed under the [MIT License](LICENSE).
 
 ### Contact
-For any questions or inquiries, please contact [Your Name](mailto:maligaurav947@gmail.com). We'd love to hear your feedback!
+For any questions or inquiries, please contact [Mali Gaurav](mailto:maligaurav947@gmail.com). We'd love to hear your feedback!
 
 ---
