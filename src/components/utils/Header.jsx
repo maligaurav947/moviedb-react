@@ -14,10 +14,10 @@ function Header() {
             <Link to="/home">
               <li>Popular</li>
             </Link>
-            <Link to="/Toprated">
+            <Link to="/top-rated">
               <li>Top Rated</li>
             </Link>
-            <Link to="/Upcoming">
+            <Link to="/up-coming">
               <li>UpComing</li>
             </Link>
           </ul>

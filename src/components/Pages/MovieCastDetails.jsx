@@ -19,16 +19,16 @@ function MovieCastDetails({ id }) {
       <br />
       <div
         key={id}
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-7 p-6 gap-5 text-white"
+        className="grid justify-center grid-cols-1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 p-6 gap-5 text-white"
       >
         {hero &&
-          hero.slice(0, 7).map((hero) => (
+          hero.slice(0, 19).map((hero) => (
             <>
               <div key={id}>
                 <img
                   src={
                     !hero.profile_path
-                      ? "https://png.pngtree.com/png-vector/20200425/ourmid/pngtree-single-person-character-in-vector-png-image_2194492.jpg"
+                      ? "https://soilspectroscopy.org/wp-content/uploads/2021/04/image-not-available.jpg"
                       : `https://image.tmdb.org/t/p/w500${hero.profile_path}`
                   }
                   alt={hero.name}
@@ -36,26 +36,6 @@ function MovieCastDetails({ id }) {
                 />
                 <h2>Real Name: {hero.name}</h2>
                 <p>Character Play: {hero.character}</p>
-              </div>
-            </>
-          ))}
-        {hero &&
-          hero.slice(8, 20).map((hero) => (
-            <>
-              <div key={id} className="flex flex-col gap-1">
-                <img
-                  src={
-                    !hero.profile_path
-                      ? "https://png.pngtree.com/png-vector/20200425/ourmid/pngtree-single-person-character-in-vector-png-image_2194492.jpg"
-                      : `https://image.tmdb.org/t/p/w500${hero.profile_path}`
-                  }
-                  alt={hero.name}
-                  className="h-[300px] w-[300px] rounded-xl"
-                />
-                <div>
-                  <h2>Real Name: {hero.name}</h2>
-                  <p>Character Play: {hero.character}</p>
-                </div>
               </div>
             </>
           ))}

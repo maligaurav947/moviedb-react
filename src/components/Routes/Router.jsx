@@ -13,9 +13,9 @@ function Router() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/view/:id" element={<View />} />
-          <Route path="/Upcoming" element={<Upcoming />} />
-          <Route path="/Toprated" element={<TRated />} />
+          <Route path="/movie/:id" element={<View />} />
+          <Route path="/up-coming" element={<Upcoming />} />
+          <Route path="/top-rated" element={<TRated />} />
         </Routes>
       </HashRouter>
     </>

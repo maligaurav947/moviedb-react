@@ -41,7 +41,12 @@ const MovieView = ({
             <div className="text-6xl flex items-center justify-between">
               <h1>{title}</h1>
 
-              <a href={homepage} className="text-4xl" target={"_blank"}>
+              <a
+                href={homepage}
+                className="text-4xl"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <p>Homepage</p>
               </a>
             </div>
