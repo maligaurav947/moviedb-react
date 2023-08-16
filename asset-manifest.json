@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/moviedb-react/static/css/main.3ee6adda.css",
-    "main.js": "/moviedb-react/static/js/main.6b0696c1.js",
+    "main.css": "/moviedb-react/static/css/main.3bb7a43e.css",
+    "main.js": "/moviedb-react/static/js/main.9f299fb6.js",
     "index.html": "/moviedb-react/index.html",
-    "main.3ee6adda.css.map": "/moviedb-react/static/css/main.3ee6adda.css.map",
-    "main.6b0696c1.js.map": "/moviedb-react/static/js/main.6b0696c1.js.map"
+    "main.3bb7a43e.css.map": "/moviedb-react/static/css/main.3bb7a43e.css.map",
+    "main.9f299fb6.js.map": "/moviedb-react/static/js/main.9f299fb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ee6adda.css",
-    "static/js/main.6b0696c1.js"
+    "static/css/main.3bb7a43e.css",
+    "static/js/main.9f299fb6.js"
   ]
 }
