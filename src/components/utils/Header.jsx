@@ -5,11 +5,9 @@ function Header() {
   return (
     <>
       <header className="">
-        <nav className="pl-5 pr-5 h-[10vh] bg-[#34393f] grid md:xl:2xl:flex items-center justify-between text-rose-600">
+        <nav className="pl-5 pr-5 h-[10vh] bg-[#34393f] grid 2xl:xl:md:flex items-center justify-center md:xl:2xl:justify-between text-rose-600">
           <Link to="/home">
-            <p className="text-6xl font-medium font-title" style={{}}>
-              MovieNexus
-            </p>
+            <p className="text-6xl font-medium font-title">MovieNexus</p>
           </Link>
           <ul className="flex gap-[15px] text-4xl font-body">
             <Link to="/home">

@@ -21,13 +21,13 @@ const MovieView = ({
           <div
             style={{
               backgroundImage: `url("${Background}")`,
-              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
               backgroundColor: "#4947473f",
               backgroundBlendMode: "darken",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
-            className="h-[100%]"
+            className="h-[100%] "
           ></div>
         </div>
         <div
@@ -38,7 +38,7 @@ const MovieView = ({
           }}
         >
           <div className="grid gap-3">
-            <div className="text-6xl flex items-center justify-between">
+            <div className="text-6xl grid md:xl:2xl:flex gap-6 items-center justify-between">
               <div className="grid gap-1">
                 <h1 className="text-rose-600">{title}</h1>
                 <h1 className="font-light text-4xl pl-1 font-title ">
@@ -54,7 +54,7 @@ const MovieView = ({
                 <p>Book Show</p>
               </a>
             </div>
-            <div className="grid gap-1 grid-cols-3 w-fit">
+            <div className="grid gap-1 grid-cols-1 md:grid-cols-2 xl:2xl:grid-cols-3 place-content-center w-fit">
               <p className="text-3xl flex items-center gap-1">
                 <BiUpvote />
                 Review: {vote_average}+
@@ -68,7 +68,7 @@ const MovieView = ({
               </p>
             </div>
           </div>
-          <div className="text-justify">
+          <div className="">
             <p className="text-5xl mb-5">Overview:</p>
             <span className="text-4xl font-light">{overview}</span>
           </div>

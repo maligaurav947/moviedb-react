@@ -12,7 +12,7 @@ const MovieCard = ({ id, title, poster_path, vote_average }) => {
             className="w-[250px] rounded-xl card"
             alt={`${title}`}
           />
-          <div className="grid place-content-center  h-[50px] w-[50px] bg-black rounded-l-full rounded-b-full relative z-50 top-[-375px] right-[-200px] ">
+          <div className="grid place-content-center  h-[50px] w-[50px] bg-black rounded-l-full rounded-b-full relative  top-[-375px] right-[-200px] ">
             <div className="text-green-600 text-4xl font-bold">
               {vote_average}
             </div>
