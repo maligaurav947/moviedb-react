@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-const API_IMG = "https://image.tmdb.org/t/p/w500/";
 
 const MovieCard = ({ id, title, poster_path, vote_average }) => {
   const poster = `https://image.tmdb.org/t/p/w400${poster_path}`;
   return (
     <Link to={`/movie/${id}`}>
-      <div key={id} className="relative">
+      <div key={id} className="relative font-body">
         <div className="grid place-content-center">
           <img
             src={`${poster}`}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
 import axios from "axios";
 
 function MovieCastDetails({ id }) {
@@ -14,7 +13,7 @@ function MovieCastDetails({ id }) {
       .catch((error) => error);
   });
   return (
-    <div className="movie-cast mt-5">
+    <div className="movie-cast mt-5 font-body">
       <h1 className="text-8xl pl-6 text-white">Cast:</h1>
       <br />
       <div

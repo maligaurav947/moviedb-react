@@ -1,16 +1,17 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
       <header className="">
-        <nav className="pl-5 pr-5 h-[10vh] bg-[#34393f] grid md:xl:2xl:flex items-center justify-between ">
+        <nav className="pl-5 pr-5 h-[10vh] bg-[#34393f] grid md:xl:2xl:flex items-center justify-between text-rose-600">
           <Link to="/home">
-            <p className="text-6xl font-semibold">MoviewDb</p>
+            <p className="text-6xl font-medium font-title" style={{}}>
+              MovieNexus
+            </p>
           </Link>
-          <ul className="flex gap-[15px] text-4xl text-[#707578]">
+          <ul className="flex gap-[15px] text-4xl font-body">
             <Link to="/home">
               <li>Popular</li>
             </Link>
