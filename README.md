@@ -8,6 +8,9 @@ Explore your favorite movies and learn more about their cast with the Movie Expl
 - Search for specific movies or actors using the search functionality.
 - Responsive design for a seamless experience on different devices.
 
+### DEMO
+- Check out the live demo of the app: [moviedb-react](https://maligaurav947.github.io/moviedb-react/)
+
 ### Motivation
 As avid movie enthusiasts, we wanted to create a tool that makes discovering movies and exploring cast information an enjoyable experience. This app was built with a passion for movies and a desire to provide a convenient platform for users to engage with movie-related data.
 
