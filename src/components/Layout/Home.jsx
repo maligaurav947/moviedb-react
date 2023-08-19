@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Header from "../utils/Header";
 import MovieCard from "../Pages/MovieCard";
+import Footer from "../utils/Footer";
 
 function Home() {
   const [items, setItems] = useState();
@@ -34,6 +35,7 @@ function Home() {
             ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
